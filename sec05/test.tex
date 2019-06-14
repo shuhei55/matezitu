@@ -1,0 +1,197 @@
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\title{光学顕微鏡および走査プローブ顕微鏡による観察}
+
+\author{03-190697 高松周平}
+\date{\today}
+\begin{document}
+\maketitle
+\section{実験の目的}
+光学顕微鏡と原子レベルで表面を観察できる走査プローブ顕微鏡を実際に使ってみることで原理や使用方法などの基礎を理解する。
+\section{原理}
+\subsection{光学顕微鏡}
+今回用いるものは、サンプルを照明し主に対物レンズと接眼レンズの２つのレンズで拡大された像を観察する光学顕微鏡の中でも対物レンズがサンプルの上に位置する正立型顕微鏡である。観察の方法は主に三種類存在し明視野観察、暗視野観察、微分干渉観察とある。明視野観察はサンプルに均一に光をあて、反射、透過した光を観察する方法。そして暗視野観察はサンプルに斜めに光をあてその反射した光を観察するもので全体的に暗くなるがその分小さいものや凹凸が観察しやすい。最後の微分干渉観察は、凹凸によって生じる光路差の違いを強調して観察することができるものでより微小な凹凸などを観察できる。
+\subsection{走査プローブ顕微鏡}
+AFM(atomic force microscopy)はプローブと呼ばれる先端が尖った三角錐がついたカンチレバーを観察したいサンプルの表面上に動かすことで、サンプルから受ける引力や斥力によるカンチレバーのたわみを計測し表面の凹凸を観察することができる。カンチレバーの動かし方はいくつかあり、表面をなぞるように普通に動かすコンタクトモードやプローブを上下に振動させながら動かすサイクリックコンタクトモードなどがある。カンチレバーのたわみを測定する方法で最も一般的なのは光テコ法がある。カンチレバー先端の変異$\delta z$は傾きの変化$\delta\theta$を用いて$\delta z = \frac{3L\delta\theta}{2}$と表せる。カンチレバーが$\delta\theta$傾くとレーザーの反射角は$2\delta\theta$変わるのでレーザーの距離を$D$、レーザースポットの直径を$d$とするとレーザースポットの位置の変化$\delta d$は次のように$\delta z$で表せる。
+$$
+\frac{\delta d}{d} = \frac{4D\delta z}{3Ld}
+$$
+\section{方法}
+\subsection{光学顕微鏡による試料の観察}
+\begin{itemize}
+\item 倍率50倍と1000倍でオブジェクティブメータを撮影する
+\item 膜厚(5nm, 10nm, 20nm, 50nm, 100nm)の$\mathrm{SiO_2/Si}$基板を50倍と100倍でそれぞれ明視野、暗視野、微分干渉観察を行う
+\item ステンレス鋼 SUS304の試験片A、Bをそれぞれ50倍の明視野観察を行う
+\item 観察画像に５本の直線を引き、結晶粒界と交わる点をきめて各線分の長さを測定する
+\item オブジェクティブメータの画像を印刷して紙面上の長さと実際の長さを比較し総合倍率を求める。また、求めた倍率より結晶粒径の平均サイズと標準偏差を求める
+\item CD、DVDの表面も同様に倍率1000倍で明視野、微分干渉観察を行う
+\item 待ち時間に生物プレパラートのクイズに答える
+\end{itemize}
+\subsection{原子間力顕微鏡による試料の観察}
+\begin{itemize}
+\item AFMのサイクリックコンタクトモードを用いてSi基板上の$\mathrm{SiO_2}$薄膜パターン五種と深堀Si基板三種を測定する
+\end{itemize}
+\section{実験結果と考察}
+\subsection{オブジェクトメーター}
+50倍は現実で13mmで0.1mmだったので130倍であるとわかる。\\
+1000倍は現実で27mmで0.01mmだったので2700倍であるとわかる。
+\begin{figure}[htbp]
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/obj_x50.bmp}
+  \end{center}
+  \caption{50倍}
+  \label{fig:one}
+ \end{minipage}
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/obj_x1000.bmp}
+  \end{center}
+  \caption{1000倍}
+  \label{fig:two}
+ \end{minipage}
+\end{figure}
+\subsection{$\mathrm{SiO_2/Si}基板$}
+下の図のように膜厚が厚ければはっきりと観察できるが薄くなるに連れて観察しにくくなり、最終的全く観察できなくなる。\\
+また、明視野は高低がはっきりわかり、暗視野は境目の段差がはっきり見え、微分干渉観察は段差が立体的に観察できている。
+\begin{figure}[htbp]
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/SiO2_100nm_x1000_BF.bmp}
+  \end{center}
+  \caption{$\mathrm{SiO_2 100nm 1000倍　明視野}$}
+  \label{fig:one}
+ \end{minipage}
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/SiO2_100nm_x1000_DF.bmp}
+  \end{center}
+  \caption{$\mathrm{SiO_2 100nm 1000倍　暗視野}$}
+  \label{fig:two}
+ \end{minipage}
+\end{figure}
+\begin{figure}[htbp]
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/SiO2_100nm_x1000_DIC.bmp}
+  \end{center}
+  \caption{$\mathrm{SiO_2 100nm 1000倍　微分干渉観察}$}
+  \label{fig:one}
+ \end{minipage}
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/SiO2_5nm_x1000_BF.bmp}
+  \end{center}
+  \caption{$\mathrm{SiO_2 5nm 1000倍　明視野}$}
+  \label{fig:two}
+ \end{minipage}
+\end{figure}
+\subsection{ステンレス鋼}
+下記の画像を印刷し直線を引き、結晶粒径を求めた。\\
+また低温なほど結晶粒は大きくなり高温だと結晶粒は小さくなることがわかる。\\
+\begin{table}[h]
+\caption{結晶粒径}
+ \label{table:SpeedOfLight}
+ \centering
+  \begin{tabular}{clll}
+   \hline
+   A[$10^{-5}m$] & B[$10^{-5}m$] \\
+   \hline \hline
+   4.0 & 0.8\\
+   4.8 & 0.6\\
+   3.6 & 0.4\\
+   3.2 & 0.6\\
+   4.2 & 0.5\\
+   \hline
+   3.96($\pm0.54$) & 0.58($\pm0.13$) \\
+  \end{tabular}
+\end{table}
+\begin{figure}[htbp]
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/SUS_A_x50_BF.bmp}
+  \end{center}
+  \caption{SUS304 A}
+  \label{fig:one}
+ \end{minipage}
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/SUS_B_x50_BF.bmp}
+  \end{center}
+  \caption{SUS304 B}
+  \label{fig:two}
+ \end{minipage}
+\end{figure}
+\subsection{CD/DVD}
+CDとDVDはデータが書き込まれている様子が確認できる\\
+BLについても観察を行ったが小さすぎて特に観察できなかった\\
+またこれらはBFで観察したものであり、DICではほぼ観察できなかった。\\
+CDのビットが大体$10^{-6}m\times2\cdot10^{-6}m=2\cdot10^{-12}m^{2}$なのでその逆数は$5.0\cdot10^{11}$\\
+DVDのビットが大体$5.0\cdot10^{-7}m\times10^{-6}m=5\cdot10^{-13}m^{2}$なのでその逆数は$2.0\cdot10^{12}$\\
+CDが0.65GB,DVDが4.7GBで約８倍に対し逆数は４倍なのでオーダーはあっている。これは目視の計算誤差だろう。
+\begin{figure}[htbp]
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/CD_x1000_BF.bmp}
+  \end{center}
+  \caption{CD 1000倍}
+  \label{fig:one}
+ \end{minipage}
+ \begin{minipage}{0.5\hsize}
+  \begin{center}
+   \includegraphics[width=70mm,height=35mm]{pictures/DVD_x1000_BF.bmp}
+  \end{center}
+  \caption{DVD 1000倍}
+  \label{fig:two}
+ \end{minipage}
+\end{figure}
+\subsection{原子間力顕微鏡による試料の観察}
+\subsubsection{$\mathrm{SiO_2}$}
+AFMによる$\mathrm{SiO_2}$の観察の結果は表２のようになる\\
+\begin{table}[h]
+\caption{$\mathrm{SiO_2}の膜厚[\mathrm{nm}]$}
+ \label{table:SpeedOfLight}
+ \centering
+  \begin{tabular}{cllll}
+   \hline
+   5nm & 10nm & 20nm & 50nm & 100nm\\
+   \hline \hline
+   7.867 & 18.03 & 34.81 & 72.10 & 99.05\\
+   8.152 & 15.48 & 34.14 & 71.15 & 98.62\\
+   9.485 & 18.08 & 33.58 & 72.81 & 97.79\\
+   3.473 & 15.59 & 33.26 & 71.43 & 98.11\\
+   10.60 & 17.91 & 34.85 & 72.47 & 96.07\\
+   \hline
+   7.915 & 17.02 & 34.13 & 71.99 & 97.93\\
+   \\
+  \end{tabular}
+\end{table}
+\\
+\subsubsection{Si}
+同様に深堀$\mathrm{Si}基板の$観察の結果は表３のようになる\\
+以下の表よりエッチングが長いほどより溶けて彫りが深くなり高低差が大きくなるとわかる\\
+\begin{table}[h]
+\caption{$\mathrm{Si}の膜厚[\mathrm{nm}]$}
+ \label{table:SpeedOfLight}
+ \centering
+  \begin{tabular}{cllll}
+   \hline
+   2sec & 10sec\\
+   \hline \hline
+   1584 & 2759\\
+   1671 & 2703\\
+   1586 & 2686\\
+   1531 & 2713\\
+   1656 & 2719\\
+   \hline
+   1606 & 2716\\
+   \\
+  \end{tabular}
+\end{table}
+\\
+\begin{thebibliography}{99}
+\bibitem{} 教科書
+\bibitem{} 光の当て方の違いで、こんなに変わる！  https://www.olympus-lifescience.com/ja/support/learn/01/014/
+\bibitem{} 安藤敏夫　高速バイオ原子間力顕 http://biophys.w3.kanazawa-u.ac.jp/AFM-text.pdf
+\end{thebibliography} 
+\end{document}

@@ -1,0 +1,19 @@
+
+
+*******************************************************************************
+Thu May 30 12:14:42 2019
+
+
+FIT:    data read from '../datas/cell1.dat' u 4:5
+        format = x:z
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'b' is zero.
+iter      chisq       delta/lim  lambda   a             b            
+   0 6.0509229554e+08   0.00e+00  5.86e+03    1.000000e+01   1.000000e-30
+BREAK: Singular matrix in Invert_RtR
